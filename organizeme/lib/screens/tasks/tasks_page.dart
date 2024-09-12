@@ -6,19 +6,19 @@ class TasksPage extends StatelessWidget {
   TasksPage({super.key});
 
   final List<Task> _tasks = [
-    Task(
+    const Task(
       title: 'Ir ao mercado',
-      category: 'Pessoal',
+      category: 'Super',
       hour: TimeOfDay(hour: 8, minute: 0),
     ),
-    Task(
+    const Task(
       title: 'Consulta dermato',
       category: 'Saúde',
       hour: TimeOfDay(hour: 13, minute: 0),
     ),
-    Task(
+    const Task(
       title: 'Buscar as crianças',
-      category: 'Educação',
+      category: 'Escola',
       hour: TimeOfDay(hour: 17, minute: 0),
     ),
   ];
@@ -29,7 +29,7 @@ class TasksPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('OrganizeMe'),
       ),
-      drawer: AppDrawer(),
+      drawer: const AppDrawer(),
       body: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
@@ -40,8 +40,19 @@ class TasksPage extends StatelessWidget {
                     color: Theme.of(context).colorScheme.secondary,
                   ),
             ),
+            const SizedBox(height: 32),
+            Expanded(
+              child: ListView.builder(
+                itemCount: _tasks.length,
+                itemBuilder: (context, index) => _tasks[index],
+              ),
+            ),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: const Icon(Icons.add),
       ),
     );
   }

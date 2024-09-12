@@ -14,10 +14,47 @@ class Task extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text(
-        'Task is working',
-        style: TextStyle(fontSize: 20),
+    return Card(
+      child: Padding(
+        padding: EdgeInsets.symmetric(
+          vertical: 16,
+          horizontal: 12,
+        ),
+        child: Column(
+          children: [
+            Wrap(
+              alignment: WrapAlignment.start,
+              spacing: 16, // Equivale ao SizedBox entre os elementos
+              crossAxisAlignment: WrapCrossAlignment.center,
+              children: [
+                Text(
+                  title,
+                  style: Theme.of(context).textTheme.headlineMedium,
+                ),
+                Chip(
+                  label: Text(category),
+                  backgroundColor: Theme.of(context).colorScheme.secondary,
+                  labelStyle: TextStyle(
+                    color: Theme.of(context).colorScheme.onSecondary,
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                Icon(
+                  Icons.access_time,
+                  size: 20,
+                ),
+                const SizedBox(width: 8),
+                Text(
+                  hour.format(context),
+                  style: Theme.of(context).textTheme.titleLarge,
+                ),
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
