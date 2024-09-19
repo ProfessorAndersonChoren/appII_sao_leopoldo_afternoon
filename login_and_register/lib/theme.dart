@@ -5,18 +5,18 @@ class MaterialTheme {
 
   const MaterialTheme(this.textTheme);
 
-  static ColorScheme lightScheme() {
-    return const ColorScheme(
+  static MaterialScheme lightScheme() {
+    return const MaterialScheme(
       brightness: Brightness.light,
-      primary: Color(4287514965),
-      surfaceTint: Color(4287514965),
+      primary: Color(4282607667),
+      surfaceTint: Color(4282607667),
       onPrimary: Color(4294967295),
-      primaryContainer: Color(4294957533),
-      onPrimaryContainer: Color(4282058516),
-      secondary: Color(4282607667),
+      primaryContainer: Color(4291096492),
+      onPrimaryContainer: Color(4278591744),
+      secondary: Color(4287514965),
       onSecondary: Color(4294967295),
-      secondaryContainer: Color(4291096492),
-      onSecondaryContainer: Color(4278591744),
+      secondaryContainer: Color(4294957533),
+      onSecondaryContainer: Color(4282058516),
       tertiary: Color(4285616521),
       onTertiary: Color(4294967295),
       tertiaryContainer: Color(4294105855),
@@ -25,23 +25,27 @@ class MaterialTheme {
       onError: Color(4294967295),
       errorContainer: Color(4294957782),
       onErrorContainer: Color(4282449922),
+      background: Color(4294507248),
+      onBackground: Color(4279835927),
       surface: Color(4294441471),
       onSurface: Color(4279770144),
-      onSurfaceVariant: Color(4283581253),
-      outline: Color(4286870388),
-      outlineVariant: Color(4292329923),
+      surfaceVariant: Color(4292863191),
+      onSurfaceVariant: Color(4282599486),
+      outline: Color(4285757806),
+      outlineVariant: Color(4291020987),
       shadow: Color(4278190080),
       scrim: Color(4278190080),
       inverseSurface: Color(4281151797),
-      inversePrimary: Color(4294947516),
-      primaryFixed: Color(4294957533),
-      onPrimaryFixed: Color(4282058516),
-      primaryFixedDim: Color(4294947516),
-      onPrimaryFixedVariant: Color(4285674302),
-      secondaryFixed: Color(4291096492),
-      onSecondaryFixed: Color(4278591744),
-      secondaryFixedDim: Color(4289254034),
-      onSecondaryFixedVariant: Color(4281093917),
+      inverseOnSurface: Color(4293849590),
+      inversePrimary: Color(4289319570),
+      primaryFixed: Color(4291096492),
+      onPrimaryFixed: Color(4278591744),
+      primaryFixedDim: Color(4289319570),
+      onPrimaryFixedVariant: Color(4281093917),
+      secondaryFixed: Color(4294957533),
+      onSecondaryFixed: Color(4282058516),
+      secondaryFixedDim: Color(4294947516),
+      onSecondaryFixedVariant: Color(4285674302),
       tertiaryFixed: Color(4294105855),
       onTertiaryFixed: Color(4280945729),
       tertiaryFixedDim: Color(4292786423),
@@ -57,20 +61,20 @@ class MaterialTheme {
   }
 
   ThemeData light() {
-    return theme(lightScheme());
+    return theme(lightScheme().toColorScheme());
   }
 
-  static ColorScheme lightMediumContrastScheme() {
-    return const ColorScheme(
+  static MaterialScheme lightMediumContrastScheme() {
+    return const MaterialScheme(
       brightness: Brightness.light,
-      primary: Color(4285345594),
-      surfaceTint: Color(4287514965),
+      primary: Color(4280830746),
+      surfaceTint: Color(4282607667),
       onPrimary: Color(4294967295),
-      primaryContainer: Color(4289224554),
+      primaryContainer: Color(4284055111),
       onPrimaryContainer: Color(4294967295),
-      secondary: Color(4280830746),
+      secondary: Color(4285345594),
       onSecondary: Color(4294967295),
-      secondaryContainer: Color(4284055111),
+      secondaryContainer: Color(4289224554),
       onSecondaryContainer: Color(4294967295),
       tertiary: Color(4283709035),
       onTertiary: Color(4294967295),
@@ -80,22 +84,26 @@ class MaterialTheme {
       onError: Color(4294967295),
       errorContainer: Color(4292490286),
       onErrorContainer: Color(4294967295),
+      background: Color(4294507248),
+      onBackground: Color(4279835927),
       surface: Color(4294441471),
       onSurface: Color(4279770144),
-      onSurfaceVariant: Color(4283318081),
-      outline: Color(4285225821),
-      outlineVariant: Color(4287133304),
+      surfaceVariant: Color(4292863191),
+      onSurfaceVariant: Color(4282336315),
+      outline: Color(4284178774),
+      outlineVariant: Color(4286020721),
       shadow: Color(4278190080),
       scrim: Color(4278190080),
       inverseSurface: Color(4281151797),
-      inversePrimary: Color(4294947516),
-      primaryFixed: Color(4289224554),
+      inverseOnSurface: Color(4293849590),
+      inversePrimary: Color(4289319570),
+      primaryFixed: Color(4284055111),
       onPrimaryFixed: Color(4294967295),
-      primaryFixedDim: Color(4287317842),
+      primaryFixedDim: Color(4282475824),
       onPrimaryFixedVariant: Color(4294967295),
-      secondaryFixed: Color(4284055111),
+      secondaryFixed: Color(4289224554),
       onSecondaryFixed: Color(4294967295),
-      secondaryFixedDim: Color(4282475825),
+      secondaryFixedDim: Color(4287317842),
       onSecondaryFixedVariant: Color(4294967295),
       tertiaryFixed: Color(4287129760),
       onTertiaryFixed: Color(4294967295),
@@ -112,20 +120,20 @@ class MaterialTheme {
   }
 
   ThemeData lightMediumContrast() {
-    return theme(lightMediumContrastScheme());
+    return theme(lightMediumContrastScheme().toColorScheme());
   }
 
-  static ColorScheme lightHighContrastScheme() {
-    return const ColorScheme(
+  static MaterialScheme lightHighContrastScheme() {
+    return const MaterialScheme(
       brightness: Brightness.light,
-      primary: Color(4282650139),
-      surfaceTint: Color(4287514965),
+      primary: Color(4278724864),
+      surfaceTint: Color(4282607667),
       onPrimary: Color(4294967295),
-      primaryContainer: Color(4285345594),
+      primaryContainer: Color(4280830746),
       onPrimaryContainer: Color(4294967295),
-      secondary: Color(4278724864),
+      secondary: Color(4282650139),
       onSecondary: Color(4294967295),
-      secondaryContainer: Color(4280830746),
+      secondaryContainer: Color(4285345594),
       onSecondaryContainer: Color(4294967295),
       tertiary: Color(4281406536),
       onTertiary: Color(4294967295),
@@ -135,22 +143,26 @@ class MaterialTheme {
       onError: Color(4294967295),
       errorContainer: Color(4287365129),
       onErrorContainer: Color(4294967295),
+      background: Color(4294507248),
+      onBackground: Color(4279835927),
       surface: Color(4294441471),
       onSurface: Color(4278190080),
-      onSurfaceVariant: Color(4281147682),
-      outline: Color(4283318081),
-      outlineVariant: Color(4283318081),
+      surfaceVariant: Color(4292863191),
+      onSurfaceVariant: Color(4280296733),
+      outline: Color(4282336315),
+      outlineVariant: Color(4282336315),
       shadow: Color(4278190080),
       scrim: Color(4278190080),
       inverseSurface: Color(4281151797),
-      inversePrimary: Color(4294960872),
-      primaryFixed: Color(4285345594),
+      inverseOnSurface: Color(4294967295),
+      inversePrimary: Color(4291688885),
+      primaryFixed: Color(4280830746),
       onPrimaryFixed: Color(4294967295),
-      primaryFixedDim: Color(4283504933),
+      primaryFixedDim: Color(4279383045),
       onPrimaryFixedVariant: Color(4294967295),
-      secondaryFixed: Color(4280830746),
+      secondaryFixed: Color(4285345594),
       onSecondaryFixed: Color(4294967295),
-      secondaryFixedDim: Color(4279383045),
+      secondaryFixedDim: Color(4283504933),
       onSecondaryFixedVariant: Color(4294967295),
       tertiaryFixed: Color(4283709035),
       onTertiaryFixed: Color(4294967295),
@@ -167,21 +179,21 @@ class MaterialTheme {
   }
 
   ThemeData lightHighContrast() {
-    return theme(lightHighContrastScheme());
+    return theme(lightHighContrastScheme().toColorScheme());
   }
 
-  static ColorScheme darkScheme() {
-    return const ColorScheme(
+  static MaterialScheme darkScheme() {
+    return const MaterialScheme(
       brightness: Brightness.dark,
-      primary: Color(4294947516),
-      surfaceTint: Color(4294947516),
-      onPrimary: Color(4283833640),
-      primaryContainer: Color(4285674302),
-      onPrimaryContainer: Color(4294957533),
-      secondary: Color(4289254034),
-      onSecondary: Color(4279646216),
-      secondaryContainer: Color(4281093917),
-      onSecondaryContainer: Color(4291096492),
+      primary: Color(4289319570),
+      surfaceTint: Color(4289319570),
+      onPrimary: Color(4279646216),
+      primaryContainer: Color(4281093917),
+      onPrimaryContainer: Color(4291096492),
+      secondary: Color(4294947516),
+      onSecondary: Color(4283833640),
+      secondaryContainer: Color(4285674302),
+      onSecondaryContainer: Color(4294957533),
       tertiary: Color(4292786423),
       onTertiary: Color(4282393431),
       tertiaryContainer: Color(4283972207),
@@ -190,23 +202,27 @@ class MaterialTheme {
       onError: Color(4285071365),
       errorContainer: Color(4287823882),
       onErrorContainer: Color(4294957782),
+      background: Color(4279309327),
+      onBackground: Color(4292994265),
       surface: Color(4279243800),
       onSurface: Color(4292928232),
-      onSurfaceVariant: Color(4292329923),
-      outline: Color(4288646286),
-      outlineVariant: Color(4283581253),
+      surfaceVariant: Color(4282599486),
+      onSurfaceVariant: Color(4291020987),
+      outline: Color(4287468167),
+      outlineVariant: Color(4282599486),
       shadow: Color(4278190080),
       scrim: Color(4278190080),
       inverseSurface: Color(4292928232),
-      inversePrimary: Color(4287514965),
-      primaryFixed: Color(4294957533),
-      onPrimaryFixed: Color(4282058516),
-      primaryFixedDim: Color(4294947516),
-      onPrimaryFixedVariant: Color(4285674302),
-      secondaryFixed: Color(4291096492),
-      onSecondaryFixed: Color(4278591744),
-      secondaryFixedDim: Color(4289254034),
-      onSecondaryFixedVariant: Color(4281093917),
+      inverseOnSurface: Color(4281151797),
+      inversePrimary: Color(4282607667),
+      primaryFixed: Color(4291096492),
+      onPrimaryFixed: Color(4278591744),
+      primaryFixedDim: Color(4289319570),
+      onPrimaryFixedVariant: Color(4281093917),
+      secondaryFixed: Color(4294957533),
+      onSecondaryFixed: Color(4282058516),
+      secondaryFixedDim: Color(4294947516),
+      onSecondaryFixedVariant: Color(4285674302),
       tertiaryFixed: Color(4294105855),
       onTertiaryFixed: Color(4280945729),
       tertiaryFixedDim: Color(4292786423),
@@ -222,20 +238,20 @@ class MaterialTheme {
   }
 
   ThemeData dark() {
-    return theme(darkScheme());
+    return theme(darkScheme().toColorScheme());
   }
 
-  static ColorScheme darkMediumContrastScheme() {
-    return const ColorScheme(
+  static MaterialScheme darkMediumContrastScheme() {
+    return const MaterialScheme(
       brightness: Brightness.dark,
-      primary: Color(4294949057),
-      surfaceTint: Color(4294947516),
-      onPrimary: Color(4281533199),
-      primaryContainer: Color(4291394182),
+      primary: Color(4289582998),
+      surfaceTint: Color(4289319570),
+      onPrimary: Color(4278459136),
+      primaryContainer: Color(4285832032),
       onPrimaryContainer: Color(4278190080),
-      secondary: Color(4289582998),
-      onSecondary: Color(4278459136),
-      secondaryContainer: Color(4285832033),
+      secondary: Color(4294949057),
+      onSecondary: Color(4281533199),
+      secondaryContainer: Color(4291394182),
       onSecondaryContainer: Color(4278190080),
       tertiary: Color(4293049852),
       onTertiary: Color(4280550971),
@@ -245,23 +261,27 @@ class MaterialTheme {
       onError: Color(4281794561),
       errorContainer: Color(4294923337),
       onErrorContainer: Color(4278190080),
+      background: Color(4279309327),
+      onBackground: Color(4292994265),
       surface: Color(4279243800),
       onSurface: Color(4294572799),
-      onSurfaceVariant: Color(4292593351),
-      outline: Color(4289896096),
-      outlineVariant: Color(4287725440),
+      surfaceVariant: Color(4282599486),
+      onSurfaceVariant: Color(4291284415),
+      outline: Color(4288652696),
+      outlineVariant: Color(4286612857),
       shadow: Color(4278190080),
       scrim: Color(4278190080),
       inverseSurface: Color(4292928232),
-      inversePrimary: Color(4285740095),
-      primaryFixed: Color(4294957533),
-      onPrimaryFixed: Color(4281073674),
-      primaryFixedDim: Color(4294947516),
-      onPrimaryFixedVariant: Color(4284293678),
-      secondaryFixed: Color(4291096492),
-      onSecondaryFixed: Color(4278392064),
-      secondaryFixedDim: Color(4289254034),
-      onSecondaryFixedVariant: Color(4280040974),
+      inverseOnSurface: Color(4280756783),
+      inversePrimary: Color(4281159710),
+      primaryFixed: Color(4291096492),
+      onPrimaryFixed: Color(4278392064),
+      primaryFixedDim: Color(4289319570),
+      onPrimaryFixedVariant: Color(4280040974),
+      secondaryFixed: Color(4294957533),
+      onSecondaryFixed: Color(4281073674),
+      secondaryFixedDim: Color(4294947516),
+      onSecondaryFixedVariant: Color(4284293678),
       tertiaryFixed: Color(4294105855),
       onTertiaryFixed: Color(4280222006),
       tertiaryFixedDim: Color(4292786423),
@@ -277,20 +297,20 @@ class MaterialTheme {
   }
 
   ThemeData darkMediumContrast() {
-    return theme(darkMediumContrastScheme());
+    return theme(darkMediumContrastScheme().toColorScheme());
   }
 
-  static ColorScheme darkHighContrastScheme() {
-    return const ColorScheme(
+  static MaterialScheme darkHighContrastScheme() {
+    return const MaterialScheme(
       brightness: Brightness.dark,
-      primary: Color(4294965753),
-      surfaceTint: Color(4294947516),
+      primary: Color(4294115301),
+      surfaceTint: Color(4289319570),
       onPrimary: Color(4278190080),
-      primaryContainer: Color(4294949057),
+      primaryContainer: Color(4289582998),
       onPrimaryContainer: Color(4278190080),
-      secondary: Color(4294115301),
+      secondary: Color(4294965753),
       onSecondary: Color(4278190080),
-      secondaryContainer: Color(4289582998),
+      secondaryContainer: Color(4294949057),
       onSecondaryContainer: Color(4278190080),
       tertiary: Color(4294965755),
       onTertiary: Color(4278190080),
@@ -300,23 +320,27 @@ class MaterialTheme {
       onError: Color(4278190080),
       errorContainer: Color(4294949553),
       onErrorContainer: Color(4278190080),
+      background: Color(4279309327),
+      onBackground: Color(4292994265),
       surface: Color(4279243800),
       onSurface: Color(4294967295),
-      onSurfaceVariant: Color(4294965753),
-      outline: Color(4292593351),
-      outlineVariant: Color(4292593351),
+      surfaceVariant: Color(4282599486),
+      onSurfaceVariant: Color(4294508015),
+      outline: Color(4291284415),
+      outlineVariant: Color(4291284415),
       shadow: Color(4278190080),
       scrim: Color(4278190080),
       inverseSurface: Color(4292928232),
-      inversePrimary: Color(4283307554),
-      primaryFixed: Color(4294959074),
+      inverseOnSurface: Color(4278190080),
+      inversePrimary: Color(4279185667),
+      primaryFixed: Color(4291359664),
       onPrimaryFixed: Color(4278190080),
-      primaryFixedDim: Color(4294949057),
-      onPrimaryFixedVariant: Color(4281533199),
-      secondaryFixed: Color(4291359664),
+      primaryFixedDim: Color(4289582998),
+      onPrimaryFixedVariant: Color(4278459136),
+      secondaryFixed: Color(4294959074),
       onSecondaryFixed: Color(4278190080),
-      secondaryFixedDim: Color(4289582998),
-      onSecondaryFixedVariant: Color(4278459136),
+      secondaryFixedDim: Color(4294949057),
+      onSecondaryFixedVariant: Color(4281533199),
       tertiaryFixed: Color(4294303999),
       onTertiaryFixed: Color(4278190080),
       tertiaryFixedDim: Color(4293049852),
@@ -332,7 +356,7 @@ class MaterialTheme {
   }
 
   ThemeData darkHighContrast() {
-    return theme(darkHighContrastScheme());
+    return theme(darkHighContrastScheme().toColorScheme());
   }
 
 
@@ -351,6 +375,149 @@ class MaterialTheme {
 
   List<ExtendedColor> get extendedColors => [
   ];
+}
+
+class MaterialScheme {
+  const MaterialScheme({
+    required this.brightness,
+    required this.primary, 
+    required this.surfaceTint, 
+    required this.onPrimary, 
+    required this.primaryContainer, 
+    required this.onPrimaryContainer, 
+    required this.secondary, 
+    required this.onSecondary, 
+    required this.secondaryContainer, 
+    required this.onSecondaryContainer, 
+    required this.tertiary, 
+    required this.onTertiary, 
+    required this.tertiaryContainer, 
+    required this.onTertiaryContainer, 
+    required this.error, 
+    required this.onError, 
+    required this.errorContainer, 
+    required this.onErrorContainer, 
+    required this.background, 
+    required this.onBackground, 
+    required this.surface, 
+    required this.onSurface, 
+    required this.surfaceVariant, 
+    required this.onSurfaceVariant, 
+    required this.outline, 
+    required this.outlineVariant, 
+    required this.shadow, 
+    required this.scrim, 
+    required this.inverseSurface, 
+    required this.inverseOnSurface, 
+    required this.inversePrimary, 
+    required this.primaryFixed, 
+    required this.onPrimaryFixed, 
+    required this.primaryFixedDim, 
+    required this.onPrimaryFixedVariant, 
+    required this.secondaryFixed, 
+    required this.onSecondaryFixed, 
+    required this.secondaryFixedDim, 
+    required this.onSecondaryFixedVariant, 
+    required this.tertiaryFixed, 
+    required this.onTertiaryFixed, 
+    required this.tertiaryFixedDim, 
+    required this.onTertiaryFixedVariant, 
+    required this.surfaceDim, 
+    required this.surfaceBright, 
+    required this.surfaceContainerLowest, 
+    required this.surfaceContainerLow, 
+    required this.surfaceContainer, 
+    required this.surfaceContainerHigh, 
+    required this.surfaceContainerHighest, 
+  });
+
+  final Brightness brightness;
+  final Color primary;
+  final Color surfaceTint;
+  final Color onPrimary;
+  final Color primaryContainer;
+  final Color onPrimaryContainer;
+  final Color secondary;
+  final Color onSecondary;
+  final Color secondaryContainer;
+  final Color onSecondaryContainer;
+  final Color tertiary;
+  final Color onTertiary;
+  final Color tertiaryContainer;
+  final Color onTertiaryContainer;
+  final Color error;
+  final Color onError;
+  final Color errorContainer;
+  final Color onErrorContainer;
+  final Color background;
+  final Color onBackground;
+  final Color surface;
+  final Color onSurface;
+  final Color surfaceVariant;
+  final Color onSurfaceVariant;
+  final Color outline;
+  final Color outlineVariant;
+  final Color shadow;
+  final Color scrim;
+  final Color inverseSurface;
+  final Color inverseOnSurface;
+  final Color inversePrimary;
+  final Color primaryFixed;
+  final Color onPrimaryFixed;
+  final Color primaryFixedDim;
+  final Color onPrimaryFixedVariant;
+  final Color secondaryFixed;
+  final Color onSecondaryFixed;
+  final Color secondaryFixedDim;
+  final Color onSecondaryFixedVariant;
+  final Color tertiaryFixed;
+  final Color onTertiaryFixed;
+  final Color tertiaryFixedDim;
+  final Color onTertiaryFixedVariant;
+  final Color surfaceDim;
+  final Color surfaceBright;
+  final Color surfaceContainerLowest;
+  final Color surfaceContainerLow;
+  final Color surfaceContainer;
+  final Color surfaceContainerHigh;
+  final Color surfaceContainerHighest;
+}
+
+extension MaterialSchemeUtils on MaterialScheme {
+  ColorScheme toColorScheme() {
+    return ColorScheme(
+      brightness: brightness,
+      primary: primary,
+      onPrimary: onPrimary,
+      primaryContainer: primaryContainer,
+      onPrimaryContainer: onPrimaryContainer,
+      secondary: secondary,
+      onSecondary: onSecondary,
+      secondaryContainer: secondaryContainer,
+      onSecondaryContainer: onSecondaryContainer,
+      tertiary: tertiary,
+      onTertiary: onTertiary,
+      tertiaryContainer: tertiaryContainer,
+      onTertiaryContainer: onTertiaryContainer,
+      error: error,
+      onError: onError,
+      errorContainer: errorContainer,
+      onErrorContainer: onErrorContainer,
+      background: background,
+      onBackground: onBackground,
+      surface: surface,
+      onSurface: onSurface,
+      surfaceVariant: surfaceVariant,
+      onSurfaceVariant: onSurfaceVariant,
+      outline: outline,
+      outlineVariant: outlineVariant,
+      shadow: shadow,
+      scrim: scrim,
+      inverseSurface: inverseSurface,
+      onInverseSurface: inverseOnSurface,
+      inversePrimary: inversePrimary,
+    );
+  }
 }
 
 class ExtendedColor {
