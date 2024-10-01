@@ -26,7 +26,7 @@ class Home extends StatelessWidget {
           widget = ListView.separated(
             itemCount: snapshot.data!.length,
             itemBuilder: (_, index) => ListItem(contact: snapshot.data![index]),
-            separatorBuilder: (_, index) => SizedBox(height: 8),
+            separatorBuilder: (_, index) => const SizedBox(height: 8),
           );
         }
 

@@ -1,4 +1,5 @@
 import 'package:agenda_de_contatos/model/contact.dart';
+import 'package:agenda_de_contatos/repository/contact_repository.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:slideable/slideable.dart';
@@ -20,7 +21,9 @@ class ListItem extends StatelessWidget {
               Icons.edit,
               color: Colors.orange,
             ),
-            onPress: () {},
+            onPress: () {
+              Navigator.pushNamed(context, '/edit', arguments: contact);
+            },
             backgroudColor: Colors.transparent,
           ),
           ActionItems(
@@ -28,7 +31,9 @@ class ListItem extends StatelessWidget {
               Icons.delete,
               color: Colors.red,
             ),
-            onPress: () {},
+            onPress: () {
+              ContactRepository.delete(contact.id!);
+            },
             backgroudColor: Colors.transparent,
           ),
         ],
@@ -68,7 +73,7 @@ class ListElement extends StatelessWidget {
             backgroundColor: Theme.of(context).colorScheme.secondary,
             child: Text(
               contact.name.substring(0, 1).toUpperCase(),
-              style: TextStyle(
+              style: const TextStyle(
                 color: Colors.white,
               ),
             ),

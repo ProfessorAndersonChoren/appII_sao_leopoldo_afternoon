@@ -1,4 +1,5 @@
 import 'package:agenda_de_contatos/model/contact.dart';
+import 'package:agenda_de_contatos/repository/contact_repository.dart';
 
 import 'package:agenda_de_contatos/screens/new_contact/components/custom_textfield.dart';
 import 'package:email_validator/email_validator.dart';
@@ -21,7 +22,7 @@ class EditContact extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Argumentos
-    final contact = ModalRoute.of(context)!.settings.arguments as Contact;
+    var contact = ModalRoute.of(context)!.settings.arguments as Contact;
 
     _nameController.text = contact.name;
     _lastNameController.text = contact.lastName;
@@ -34,7 +35,23 @@ class EditContact extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
-          if (_formKey.currentState!.validate()) {}
+          if (_formKey.currentState!.validate()) {
+            contact.name = _nameController.text;
+            contact.lastName = _lastNameController.text;
+            contact.email = _emailController.text;
+            contact.phone = _phoneController.text;
+            final result = await ContactRepository.update(contact.toMap());
+            SnackBar snackBar;
+            if (result > 0) {
+              snackBar = SnackBar(
+                  content: Text(
+                      'O contato ${contact.name} atualizado com sucesso!!!'));
+            } else {
+              snackBar = const SnackBar(
+                  content: Text('Não foi possível atualizar o contato!!!'));
+            }
+            ScaffoldMessenger.of(context).showSnackBar(snackBar);
+          }
         },
         child: const Icon(Icons.save),
       ),
